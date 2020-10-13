@@ -1,12 +1,248 @@
 @import url("http://fonts.googleapis.com/css?family=Open Sans");
 @import url("http://fonts.googleapis.com/css?family=Poppins");
-h1 {
+body {
+  margin: 0px;
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
 }
 
-h1 span {
-  font-family: "Poppins", sans-serif;
-  font-size: 42px;
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.section .section__container .section__row-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .section__container.section__container-border {
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.section .section__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section .section__col {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section.bg-banner {
+  min-height: 100vh;
+  background-image: url(./img/Main-image-desktop.jpg);
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.section.bg-banner .section__title {
+  color: #fff;
+}
+
+.section__title {
+  font-weight: 400;
+  width: 100%;
+}
+
+.section__title h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.section__title h2 {
+  font-size: 50px;
+  color: #004991;
+  margin-top: 0px;
+}
+
+.section__title h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section__title h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.section__title .align-center {
+  text-align: center;
+}
+
+.section__content p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.section__content p.justify-content {
+  text-align: justify;
+}
+
+.section__content p.center-content {
+  text-align: center;
+}
+
+.section__content p.space-big {
+  line-height: 24px;
+}
+
+.section__button {
+  text-align: center;
+}
+
+.section__button .btn {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 53px;
+  max-width: 271px;
+  text-transform: uppercase;
+  padding: 17px 10px 15px 10px;
+  width: 100%;
+  border-radius: 26px;
+  background: #0eb670;
+  color: #fff;
+  border-color: #22cf87;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.section__button .btn:hover {
+  cursor: pointer;
+  background: #22cf87;
+  border-color: #0eb670;
+}
+
+@media screen and (max-width: 520px) {
+  .section__button .btn {
+    font-size: 14px;
+    max-width: 250px;
+  }
+}
+
+.image-text-title h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section.bg-banner .section__subtitle {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.section.bg-banner .section__button {
+  margin-top: 80px;
+}
+
+.section .section__title-big h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.section__col .size-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__row-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.section__row-inner span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #004991;
+}
+
+.section__row-inner .section__col-inner {
+  width: 50%;
+}
+
+.section__row-inner .progress-title {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.section__row-inner .progress-title:last-child {
+  color: #50bae7;
+}
+
+.progress-bar {
+  height: 27px;
+  position: relative;
+  background: #50bae7;
+  color: #fff;
+  border-radius: 26px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+  padding-right: 5%;
+  line-height: 27px;
+}
+
+.progress-bar span {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-left: 5%;
+  color: #fff;
+  display: block;
+  height: 100%;
+  border-top-left-radius: 26px;
+  border-bottom-left-radius: 26px;
+  background-color: #004991;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-bar .progress-bar-1 {
+  width: 40%;
+}
+
+.progress-bar .progress-bar-2 {
+  width: 65%;
+}
+
+.progress-bar .progress-bar-3 {
+  width: 60%;
+}
+
+.progress-bar .progress-bar-4 {
+  width: 62%;
 }
 /*# sourceMappingURL=style.css.map */
